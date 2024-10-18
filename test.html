@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing_Employee Profile</title>
+    <style>
+        header {
+            align-items: center;
+            background-color: #002174;  /* Change header background color (Green) */
+            color: white;               /* Text color for the header */
+            padding: 20px;              /* Padding around header content */
+            text-align: center;
+            width: 100%;
+            position: relative;
+            top: 0;
+            justify-content: center;     /* Center the header content */
+        }
+
+         header h1 {
+            color: #FFFFFF; /* Change to your desired color */
+            font-size: 30px;
+            margin: 0; /* Ensure no default margin */
+            display: block; /* Ensure it behaves as a block element */
+        }
+
+         header p {
+            color: white; /* Tagline color */
+            margin: 0; /* Ensure no default margin */
+            display: block; /* Ensure it behaves as a block element */
+            font-style: italic;
+        }
+
+        main {
+            background-color: #FFFFFF; /* Main content background color */
+            padding: 20px; /* Padding around main content */
+            min-height: 300px; /* Minimum height for main content */
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #002174; /* Footer background color */
+            color: white; /* Text color */
+            padding: 30px; /* Padding around footer content */
+            text-align: center; /* Center align text */
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        body {
+            height: 100%; /* Ensure the body takes the full height of the browser */
+            margin: 0;
+            display: flex; /* Use flexbox to center elements */
+            flex-direction: column;
+            justify-content: center; /* Horizontally center */
+            align-items: center;
+            text-align: center;    
+            padding: 10px;  
+            background-color: #FFFFFF;  
+            color: #1C2951;  
+            font-family: Segoe UI, sans-serif;
+        }
+
+        body, h1, h2, p {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+
+        .header-container {
+        display: flex;   
+        flex-direction: column;   
+        align-items: center;   
+        justify-content: center;  
+        margin-top: 20px;
+        margin-bottom: 10px;  
+        }
+
+        h1 {
+        color: #002174;
+        margin: 0;   
+        font-size: 24px;  
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #2337C6;
+            color: white;
+            text-align: centre;
+            padding: 10px 0px;
+            width: 300px;
+            height: 25px;
+            border: none;
+            border-radius: 50px;
+            margin: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.45s ease;
+            font-family: Segoe UI, sans-serif;
+            font-style: ;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover {
+            background: #002174;
+        }
+
+        .custom-box p {
+        color: #333;  /* Dark gray text inside the box */
+        }
+
+        .custom-box {
+        background-color: #B5E2FF;  /* Yellow background */
+        padding: 20px;  /* Add space inside the box */
+        width: 500px;
+        height: 70px;
+        text-align: center;
+        border-radius: 15px;  /* Rounded corners */
+        margin-top: 15px;
+        margin-bottom: 15px;  /* Space below the box */
+        }
+
+         h1 {
+        margin: 0; 
+        font-size: 26px;
+        margin-bottom: 10px; 
+        }
+
+        .status-box {
+        background-color: #28A745; 
+        color: white;  
+        padding: 5px 10px;  
+        border-radius: 5px;  
+        font-size: 14px;  
+        font-weight: bold;  
+        }
+
+        .status-box.resign {
+        background-color: #DC3545;  
+        }
+
+        .staff-image {
+            display: flex;              /* Centers the image */
+            margin: 20px auto;          /* Adds space around the image */
+            max-width: 20%;            /* Ensures the image is responsive */
+            height: auto;               /* Maintains aspect ratio */
+            border-radius: 10px;        /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TAD Solutions Sdn Bhd</h1>
+        <p><small>Transforming lives through sports.</small></p>
+    </header>
+
+    <div class="header-container">
+    <h1><strong>Adele Gwyneth Yeoh (杨秀锦)</strong></h1>
+    <div class="status-box">Active</div> <!-- Status Box -->
+    </div>
+
+    <img src="images/Staff ID Test.png" alt="Testing Picture" class="staff-image">
+
+    <p>I am currently a <strong>HR Executive</strong> working at <strong>TAD Solutions Sdn Bhd</strong>.</p>
+
+     <div class="custom-box">
+        <p>
+            <strong>Employment Start Date :</strong> <u>July 15, 2024</u>
+            <br>
+            <br>
+            <strong>Employment Confirmation Date :</strong> <u>October 15, 2024</u>
+        </p>
+    </div>
+
+    <div class="button-container">
+        <a href="https://tadsportslab.com/" class="button">TAD Sports Lab</a>
+        <a href="https://wahoo.com.my/" class="button">WAHOO Swim School</a>
+        <a href="https://spiceaquatic.com/" class="button">Setia SPICE Aquatic Center</a>
+    </div>
+
+     <footer>
+        <p><br><br><br><br><br><br>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
