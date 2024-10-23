@@ -48,6 +48,18 @@
             bottom: 0;
         }
 
+        .company-logo-footer {
+            width: 100px; /* Adjust the size as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .logo-footer-container {
+            display: flex;
+            justify-content: center; /* Center the logos side by side */
+            gap: 20px; /* Adds space between the logos */
+            margin-bottom: 15px; /* Adds space between logos and footer text */
+        }
+
         body {
             height: 100%; /* Ensure the body takes the full height of the browser */
             margin: 0;
@@ -191,6 +203,9 @@
     </div>
 
      <footer>
+        <div class="logo-footer-container">
+        <img src="TAD Logo.png" alt="TAD Logo" class="company-logo-footer">
+        <img src="WAHOO Logo.png" alt="WAHOO Logo" class="company-logo-footer">
         <p><br><br><br><br><br><br>&copy; 2024 Company Name. All rights reserved.</p>
     </footer>
 </body>
